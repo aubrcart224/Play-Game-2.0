@@ -28,14 +28,15 @@ namespace Play_Game_2._0
         {
             //sound 
 
-            //SoundPlayer bleepPlayer = new SoundPlayer(A_Tone_His_Self_1266414414__1_);
-
+            SoundPlayer bleepPlayer = new SoundPlayer(Properties.Resources.A_Tone_His_Self_1266414414__1_);
+            bleepPlayer.Play();
             // button vanish countdown begin 
 
             button.Visible = false;
             //this.label1.ForeColor = Color.White;
             Refresh();
             Thread.Sleep(1100);
+
             label1.Visible = true;
             //bleepPlayer.Play();
             label1.Text = "Starting in 3";
